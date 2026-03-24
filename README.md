@@ -1,25 +1,20 @@
+# QR Reader
 
+Para este último reporte de la asignatura he creado un Script en **Bash** que permite capturar una región de la pantalla y leer el contenido de un código QR de forma rápida y sencilla.
 
+---
 
-#QR Reader 
-Script en bash que captura una región de la pantalla y lee el contenido de un código QR.
-## Dependencias usadas
--zbar
-cat > README.md << 'EOF'
+## 📦 Dependencias usadas
 
+Asegúrate de tener instaladas las siguientes herramientas:
 
+- `zbar` → Lectura de códigos QR  
+- `scrot` → Captura de pantalla  
 
-#QR Reader 
-Script en bash que captura una región de la pantalla y lee el contenido de un código QR.
-## Dependencias usadas
-- zbar
-- scrot
+---
 
-Instalarlas en Arch Linux
+## Instalación en Arch Linux
+
+```bash
 sudo pacman -S zbar scrot
 
-## Uso
-
-bash qr_reader.sh
-
-Al ejecutarlo, el cursor cambiará para que selecciones con el ratón la región de la pantalla donde está el contenido para ser escaneado, y este mismo se mostrará en la terminal
